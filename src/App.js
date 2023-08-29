@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Content from './components/Content';
+import Nav from './components/Nav';
 
 function App() {
+// let Nmae = "홍길동";
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          파일 변경됨...
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      
+    <div className ='content'>
+      <Content arrayNum="0"/>
+      <Content arrayNum="1"/>
+      <Content arrayNum="2"/>
+      <Content arrayNum ="3"/>
     </div>
+  </div>
+    
   );
 }
-
 export default App;
+
+{/* <div>
+<h3 className={Name} style={{color: "orange, backgroundColor: "skyblue"}}>Hello React {Name}</h3>
+</div> */}
